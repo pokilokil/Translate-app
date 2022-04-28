@@ -27,14 +27,11 @@ namespace Lesson2
             {
 
 
-
-
                 Console.WriteLine("Это не правильный ответ. Попробуйте снова");
                 word0 = Console.ReadLine();
 
-
-
             }
+            //Создать генератор цикла начисления баллов. 
             Console.WriteLine("Это правильный ответ, вы получаете 5 баллов");
             Console.WriteLine("Ваше количество баллов ");
             return word0;
