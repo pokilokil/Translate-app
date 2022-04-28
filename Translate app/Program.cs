@@ -14,9 +14,8 @@ namespace Lesson2
     internal class Program
 
     {
-        static string WordTranslate(string Translated, string ToTranslate)
+        static string WordTranslate(string Translated, string ToTranslate, int balls)
         {
-
             Console.WriteLine("Напишите перевод " + ToTranslate);
             string word0;
             word0 = Console.ReadLine();
@@ -33,14 +32,36 @@ namespace Lesson2
             }
             //Создать генератор цикла начисления баллов. 
             Console.WriteLine("Это правильный ответ, вы получаете 5 баллов");
-            Console.WriteLine("Ваше количество баллов ");
+            Console.WriteLine("Ваше количество баллов "+ balls);
             return word0;
         }
         static void Main(string[] args)
         {
 
-            WordTranslate("Привет", "Hello");
-            WordTranslate("Собака", "Dog");
+            Console.WriteLine("Добро подаловать в игру ПЕРЕВОДЧИК. Ваша задача угадать все слова и набрать 100 баллов");
+            WordTranslate("привет", "Hello", 5);
+            WordTranslate("собака", "Dog", 10);
+            WordTranslate("кот", "Cat", 15);
+            WordTranslate("дверь", "Door", 20);
+            WordTranslate("книга", "Book", 25);
+            WordTranslate("улица", "Street", 30);
+            WordTranslate("рука", "Hand", 35);
+            WordTranslate("рыба", "Fish", 40);
+            WordTranslate("волосы", "Hair", 45);
+            WordTranslate("лошадь", "Horse", 50);
+            WordTranslate("чай", "Tea", 55);
+            WordTranslate("молоко", "Milk", 60);
+            WordTranslate("яблоко", "Apple", 65);
+            WordTranslate("сыр", "Cheese", 70);
+            WordTranslate("ананас", "Pineapple", 75);
+            WordTranslate("кухня", "Kitchen", 80);
+            WordTranslate("зеркало", "Mirror", 85);
+            WordTranslate("январь", "January", 90);
+            WordTranslate("дождь", "Rain", 95);
+            WordTranslate("лето", "Summer", 100);
+            Console.WriteLine("Поздравляем, вы прошли игру!!!!!!!!!!!!!!!!!!");
+            Console.ReadKey();
+
 
         }
     }
